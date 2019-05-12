@@ -1,6 +1,6 @@
 # Hyde
 
-Hyde is a Crystal's answer to gems like Jekyll and Middleman; a static site generator built around pluggability, ease of use, and speed. WIth Hyde everything is based around plugins including the HTML generation, allowing you to pick and choose what pieces you want for **your** site. What a concept, right? Hyde comes in two parts; the core and the CLI.
+Hyde is a Crystal's answer to gems like Jekyll and Middleman; a static site generator built around pluggability, ease of use, and speed. WIth Hyde everything is based around plugins including the HTML generation, allowing you to pick and choose what pieces you want for *your* site. What a concept, right? Hyde comes in two parts; the core and the CLI.
 
 ### Hyde Core
 
