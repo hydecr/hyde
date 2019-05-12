@@ -1,9 +1,19 @@
 name: hyde
 version: 0.1.0
 
+description: |
+  Hyde is a pluggable static site generator written in Crystal
+
 authors:
   - Chris Watson <chris@watzon.me>
 
 crystal: 0.28.0
+
+executables:
+  - hyde
+
+targets:
+  hyde:
+    main: src/hyde-cli.cr
 
 license: MIT

@@ -1,32 +1,47 @@
-# hyde
+# Hyde
 
-Hyde is a static site generator inspired by Jekyll and written in Crystal.
+Hyde is a Crystal's answer to gems like Jekyll and Middleman; a static site generator built around pluggability, ease of use, and speed. WIth Hyde everything is based around plugins including the HTML generation, allowing you to pick and choose what pieces you want for **your** site. What a concept, right? Hyde comes in two parts; the core and the CLI.
 
-TODO: Everything. This is an idea right now and I have not yet started development yet :)
+### Hyde Core
+
+The core does all the behind the scenes work. It is the unsung hero of your Hyde install. You are only really going to worry about the Hyde Core if you're building a Hyde extension. Extension developers will hook into the `Hyde::Extensions` module to register their extension and then extend the `Hyde::Extension` class in order to hook into the build pipeline.
+
+### Hyde CLI
+
+The Hyde CLI is what most people will be interacting with, as it provides an easy way to generate and interact with your site. The CLI comes with these commands, but others may be added by extensions:
+
+- `hyde new` - generates a new Hyde static site using the defaut template located [here](#)
+- `hyde build` - build your static site
+- `hyde deploy` - use your [deployment config](#) to deploy your Hyde site
+- `hyde serve` - use the built in development server to run your Hyde site locally
 
 ## Installation
 
-1. Add the dependency to your `shard.yml`:
+**Note:** To install Hyde you will need to have Crystal installed. See the install instructions [here](https://crystal-lang.org/reference/installation/) for information on how to do that.
 
-   ```yaml
-   dependencies:
-     hyde:
-       github: watzon/hyde
-   ```
+To install just clone this repo and run the install script inside.
 
-2. Run `shards install`
-
-## Usage
-
-```crystal
-require "hyde"
+```
+git clone https://github.com/watzon/hyde.git
+cd hyde
+./install
 ```
 
-TODO: Write usage instructions here
+or if you just want to build the project
 
-## Development
+```
+crystal build
+```
 
-TODO: Write development instructions here
+to run the hyde cli just use the newly available `hyde` command
+
+```
+hyde --help
+```
+
+## Roadmap
+
+TODO: Put a roadmap here
 
 ## Contributing
 
