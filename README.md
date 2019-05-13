@@ -10,7 +10,7 @@ The core does all the behind the scenes work. It is the unsung hero of your Hyde
 
 The Hyde CLI is what most people will be interacting with, as it provides an easy way to generate and interact with your site. The CLI comes with these commands, but others may be added by extensions:
 
-- `hyde new` - generates a new Hyde static site using the defaut template located [here](#)
+- `hyde new` - generates a new Hyde static site using the defaut template located [here](https://github.com/hydecr/hyde-site-template)
 - `hyde build` - build your static site
 - `hyde deploy` - use your [deployment config](#) to deploy your Hyde site
 - `hyde serve` - use the built in development server to run your Hyde site locally
@@ -21,13 +21,13 @@ The Hyde CLI is what most people will be interacting with, as it provides an eas
 
 To install hyde just make sure you have crystal and shards installed then run
 
-```crystal
+```bash
 shards install watzon/hyde
 ```
 
 You can also always clone this repo and install it like that
 
-```crystal
+```bash
 git clone https://github.com/watzon/hyde.git
 cd hyde
 shards install
@@ -38,13 +38,18 @@ crystal build ./src/hyde.cr
 
 TODO: Put a roadmap here
 
-### Extensions Needed
+## Extensions Needed
 
-- sass
+- sass (probably using libsass)
 - il8n
 - webpack
 - cache buster
 - image optimization
+- feed generation
+- seo
+- sitemap generation
+- blog
+- emojis
 
 ## Contributing
 
