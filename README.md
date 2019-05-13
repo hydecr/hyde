@@ -19,29 +19,32 @@ The Hyde CLI is what most people will be interacting with, as it provides an eas
 
 **Note:** To install Hyde you will need to have Crystal installed. See the install instructions [here](https://crystal-lang.org/reference/installation/) for information on how to do that.
 
-To install just clone this repo and run the install script inside.
+To install hyde just make sure you have crystal and shards installed then run
 
+```crystal
+shards install watzon/hyde
 ```
+
+You can also always clone this repo and install it like that
+
+```crystal
 git clone https://github.com/watzon/hyde.git
 cd hyde
-./install
-```
-
-or if you just want to build the project
-
-```
-crystal build
-```
-
-to run the hyde cli just use the newly available `hyde` command
-
-```
-hyde --help
+shards install
+crystal build ./src/hyde.cr
 ```
 
 ## Roadmap
 
 TODO: Put a roadmap here
+
+### Extensions Needed
+
+- sass
+- il8n
+- webpack
+- cache buster
+- image optimization
 
 ## Contributing
 
