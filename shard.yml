@@ -14,10 +14,13 @@ executables:
 
 targets:
   hyde:
-    main: src/hyde.cr
+    main: src/cli.cr
 
 dependencies:
   liquid:
     github: TechMagister/liquid.cr
+  clim:
+    github: at-grandpa/clim
+    version: 0.9.0
 
 license: MIT
